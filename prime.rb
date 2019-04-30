@@ -9,7 +9,10 @@ def prime?(num)
 if num < 0 || num == 0 || num == 1
     return false
 
-    
+ #.to_a method is converting every object into an array
+ #% is an operator that divides num1 by num2 and returns remainder
+ #I forget what |prime| would signify
+ 
   else
     (2..num-1).to_a.all? do |prime|
       num % prime != 0
