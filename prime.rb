@@ -7,7 +7,7 @@ def prime?(num)
   
   if num < 0 || num == 0 || num == 1
     false 
-  elsif (2..num-1).any? {|divisor| num % divisor == 0}
+  elsif (2..num-1).none? {|divisor| num % divisor == 0}
     true
   else
     false
