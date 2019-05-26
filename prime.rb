@@ -7,7 +7,7 @@ def prime?(num)
   
   if num < 0 || num == 0 || num == 1
     false 
-  elsif (2..num-1).none? {|divisor| num % divisor == 0}
+  elsif (2..num-1).none? {|i_from_range| num % i_from_range == 0}
     true
   else
     false
@@ -19,4 +19,11 @@ end
        #primes cannot be negative numbers
        #primes cannot be 0
        #primes cannot be 1
-#The prime algorithm is explained well in this video https://www.youtube.com/watch?v=33pLqGvk-PM
+       #since it cannot be 1, the range must start at 2
+       #.none? method returns true if the block never returns true for all elements. 
+       #If the block is not given, none? will return true only if none of the collection members is true.
+       #So if (num) given is a prime number it will never equal 
+
+
+
+       #The prime algorithm is explained well in this video https://www.youtube.com/watch?v=33pLqGvk-PM
