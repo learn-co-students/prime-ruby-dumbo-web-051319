@@ -4,18 +4,19 @@
 #it has to be an if/else statement because we are doing a boolean (true/false)
 
 def prime?(num)
-#negative numbers, 0, and 1 are automatically not prime numbers so we can automatically say they are false
-
-if num < 0 || num == 0 || num == 1
-    return false
-
- #.to_a method is converting every object into an array
- #% is an operator that divides num1 by num2 and returns remainder
- #I forget what |prime| would signify
- 
+  
+  if num < 0 || num == 0 || num == 1
+    false 
+  elsif (2..num-1).none? {|divisor| num % divisor == 0}
+    true
   else
-    (2..num-1).to_a.all? do |prime|
-      num % prime != 0
-    end
-  end
+    false
+  end 
 end
+
+#First need to determine range! i.e. Error: "Be sure to account for negative numbers!"
+       #Be sure to account for negative numbers!
+       #primes cannot be negative numbers
+       #primes cannot be 0
+       #primes cannot be 1
+#The prime algorithm is explained well in this video https://www.youtube.com/watch?v=33pLqGvk-PM
