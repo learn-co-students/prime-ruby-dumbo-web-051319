@@ -20,5 +20,9 @@ def prime?(num)
       end
     end
 
-
+#OPTION 2
+#Resource: # Resource: https://www.youtube.com/watch?v=33pLqGvk-PM&feature=youtu.be
+# def prime?(number)
+#   (2..number-1).none? {|n| number % n == 0}
+# end
     
