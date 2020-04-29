@@ -10,5 +10,5 @@ def prime?(num)
       end
     end
 
-
-    
+# OPTION 2
+# Resource: https://www.youtube.com/watch?v=33pLqGvk-PM&feature=youtu.be
